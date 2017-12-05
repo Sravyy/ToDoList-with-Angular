@@ -13,9 +13,10 @@ import { Component } from '@angular/core';
 
     <form>
       <input [value]="name" (input)="name = $event.target.value" type="text">
-      // or
-      // <input [(ngModel)]="name" type="text">
+      <!-- or
+      // <input [(ngModel)]="name" type="text"> -->
     </form>
+
     <hr>
             <div>
             <div *ngIf="selectedTask">
@@ -34,7 +35,6 @@ import { Component } from '@angular/core';
            </div>
   </div>
 
-  <div *ngIf="property">Content!</div>
   `
 })
 
